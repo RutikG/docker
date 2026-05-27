@@ -1,0 +1,7 @@
+docker ps
+docker run node
+docker build Dockerfile
+docker build -t name Dockerfile
+docker run 1415126
+docker stop node
+docker images
