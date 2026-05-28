@@ -1,7 +1,11 @@
 docker ps
 docker run node
-docker build Dockerfile
-docker build -t name Dockerfile
+docker build .
+docker build -t name .
 docker run 1415126
 docker stop node
 docker images
+docker build --platform=linux/amd64 -t rutik/forfun:v2 .
+docker login -u username
+docker tag nginx-2:latest rutikg/forfun:v2
+docker push rutikg/forfun:v2
